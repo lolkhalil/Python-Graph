@@ -35,7 +35,8 @@ async def GetME():
         print(info.user_principal_name)
         print(info.id)
 
-asyncio.run(GetME())
+if __name__ == "__main__":
+    asyncio.run(GetME())
 
 # print(f"Client ID: {os.getenv('CLIENT_ID')}")
 # print(f"Tenant ID: {os.getenv('TENANT_ID')}")
