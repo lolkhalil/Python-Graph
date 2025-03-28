@@ -78,7 +78,7 @@ if __name__ == "__main__":
     Email = input()
     
     data = asyncio.run(GetUser(Email))
-    print(f"\n\n\nDisplay Name: {data.DisplayName}")
+    print(f"\nDisplay Name: {data.DisplayName}")
     print(f"Email: {data.Email}")
     print(f"ID: {data.Id}")
 
@@ -87,6 +87,3 @@ if __name__ == "__main__":
 
     for Role in data.Roles:
         print(f"Role: {Role}")
-
-# print(f"Client ID: {os.getenv('CLIENT_ID')}")
-# print(f"Tenant ID: {os.getenv('TENANT_ID')}")
